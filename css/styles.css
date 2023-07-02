@@ -1,0 +1,166 @@
+/* En este archivo escriban su CSS */
+
+/* Importar aquí la font
+
+font-family: 'Indie Flower', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Sedgwick+Ave+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+    
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+
+* {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a { 
+    text-decoration: none;
+    color: inherit;transition: 0.35;
+  font-size: 1rem;font-family:'Russo One', sans-serif; ;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    ; text-align: center;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+a:hover{opacity: 0.7;}
+
+#logo{display: flex;;align-items: center;letter-spacing: 3px
+
+;padding: 0px 7px; border-radius: 3%;font-size: 15px;font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#navbar {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    height:90px
+    ;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+}
+.navbar-items li {
+    padding: 10px;
+}
+/* -------------- desde aqui el main--------------*/
+
+img{ width: 360px; border-radius: 50%;
+}
+
+.imagen{ margin:  10px;
+}
+
+h1 { font-family: 'Sedgwick Ave Display', cursive; 
+    font-size: 36px;}
+
+p{font-family:'Russo One', sans-serif;
+font-size: 18px;}
+
+/*-------seccion 1-----------*/
+.section-main{
+    height: 70%;
+    min-height: 100vh
+
+}
+.article-inicio
+{margin-top: 30px;}
+
+.boton{ margin-top: 40px;}
+
+button{ background-color:black;
+    color: aliceblue;
+    padding: 10px 28px;
+    border-radius: 30px;
+    border: 5px;
+    font-family: 'Russo One', sans-serif;
+    margin: 4px 2px;
+    cursor: pointer; font-size: 20px;
+}
+
+/*----------seccion 2-----*/
+.hablemos{
+    margin-top: 30%;
+}
+.section-hablemos{
+ background-color: rgb(173, 181, 181);
+ border-radius: 5px;
+;padding: 20px;margin: 15px;
+
+}
+
+h3{ text-align: center;font-size: 28px;
+    margin: 18px;
+}
+.items{display: flex; justify-content:space-around;
+align-items: center;margin: 20px; height: 40vh;
+}
+
+
+footer{display: flex;
+    height: 90px;
+    background-color: black;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    ;
+    margin-top: 60px;
+
+} 

@@ -1,0 +1,49 @@
+/*CSS ESTILOS RESET/NORMALIZADOR*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    }
+    
+    body {
+    font-size: 16px;
+    }
+    
+     ----------------------------------------------------------------------------------------------------------------------
+    /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+    *  cuyos valores asigna por defecto el navegador.
+    */
+    
+    /* Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* Para que el scrolleo en la one page sea suave */
+        scroll-behavior: smooth;
+    }
+    
+    /* Para quitar los puntos a los items de listas */
+    ul {
+        list-style: none;
+    }
+    
+    /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+    *  el margin: auto; para tenerlo centrado fácilmente ;)
+    */
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
